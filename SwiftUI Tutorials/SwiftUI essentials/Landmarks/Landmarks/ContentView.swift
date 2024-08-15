@@ -20,14 +20,23 @@ struct ContentView: View {
             VStack(alignment: .leading) {
                 Text("Turtle Rock")
                     .font(.title)
-                HStack {
-                    Text("Joshua Tree National Park")
-                    Spacer()
-                    Text("California")
+                if #available(iOS 15.0, *) {
+                    HStack {
+                        Text("Joshua Tree National Park")
+                        Spacer()
+                        Text("California")
+                    }
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+                } else {
+                    HStack {
+                        Text("Joshua Tree National Park")
+                        Spacer()
+                        Text("California")
+                    }
+                    .font(.subheadline)
+                    .foregroundColor(.gray)
                 }
-                .font(.subheadline)
-                //.foregroundStyle(.secondary)
-                .foregroundColor(.gray)
                 
                 Divider()
                 

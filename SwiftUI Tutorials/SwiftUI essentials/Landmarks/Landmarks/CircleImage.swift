@@ -9,12 +9,18 @@ import SwiftUI
 
 struct CircleImage: View {
     var body: some View {
-        Image("turtlerock")
-            .clipShape(Circle())
-//            .overlay {
-//                Circle().stroke(.white, lineWidth: 4)
-//            }
-            .shadow(radius: 7)
+        if #available(iOS 15.0, *) {
+            Image("turtlerock")
+                .clipShape(Circle())
+                .overlay {
+                    Circle().stroke(.white, lineWidth: 4)
+                }
+                .shadow(radius: 7)
+        } else {
+            Image("turtlerock")
+                .clipShape(Circle())
+                .shadow(radius: 7)
+        }
     }
 }
 

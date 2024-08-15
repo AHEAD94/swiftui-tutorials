@@ -10,8 +10,11 @@ import MapKit
 
 struct MapView: View {
     var body: some View {
-        Text("Map() method needs Xcode version over 15")
-        //Map(initialPosition: .region(region))
+        if #available(iOS 17.0, *) {
+            Map(initialPosition: .region(region))
+        } else {
+            Text("Only available in iOS 17.0 or newer")
+        }
     }
     
     private var region: MKCoordinateRegion {
