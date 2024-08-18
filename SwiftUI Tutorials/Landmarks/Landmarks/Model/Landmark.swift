@@ -1,5 +1,5 @@
 //
-//  landmark.swift
+//  Landmark.swift
 //  Landmarks
 //
 //  Created by Ryu Dae-ha on 8/16/24.

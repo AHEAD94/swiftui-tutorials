@@ -9,11 +9,24 @@ import SwiftUI
 
 struct LandmarkList: View {
     var body: some View {
-        List(landmarks) { landmark in
-            LandmarkRow(landmark: landmark)
+        if #available(iOS 16.0, *) {
+            NavigationSplitView {
+                // 구조체에 identifiable 프로토콜을 추가하지 않았을 때 List 초기화
+                // List(landmarks, id: \.id)
+                List(landmarks) { landmark in
+                    NavigationLink {
+                        LandmarkDetail()
+                    } label: {
+                        LandmarkRow(landmark: landmark)
+                    }
+                }
+                .navigationTitle("Landmarks")
+            } detail: {
+                Text("Select a Landmakr")
+            }
+        } else {
+            // Fallback on earlier versions
         }
-        // 구조체에 identifiable 프로토콜을 추가하지 않았을 때
-        // List(landmarks, id: \.id)
     }
 }
 
