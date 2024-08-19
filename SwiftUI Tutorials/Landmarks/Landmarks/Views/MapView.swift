@@ -9,9 +9,12 @@ import SwiftUI
 import MapKit
 
 struct MapView: View {
+    var coordinate: CLLocationCoordinate2D
+    
     var body: some View {
         if #available(iOS 17.0, *) {
-            Map(initialPosition: .region(region))
+            Map(position: .constant(.region(region)))
+            // constant: 임의로 지도 위치를 바꾸어도 MapView는 detect 할 필요 없음
         } else {
             Text("Only available in iOS 17.0 or newer")
         }
@@ -19,7 +22,7 @@ struct MapView: View {
     
     private var region: MKCoordinateRegion {
         MKCoordinateRegion(
-            center: CLLocationCoordinate2D(latitude: 34.011_286, longitude: -116.166_868),
+            center: coordinate,
             span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)
         )
     }
@@ -27,6 +30,6 @@ struct MapView: View {
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView()
+        MapView(coordinate: CLLocationCoordinate2D(latitude: 34.011_286, longitude: -116.166_868))
     }
 }
