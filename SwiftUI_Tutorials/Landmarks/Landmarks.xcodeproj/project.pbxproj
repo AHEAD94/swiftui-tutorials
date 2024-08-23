@@ -90,12 +90,12 @@
 		C035DB5D2C6F9F7A00E3A26D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C035DB602C6FA08700E3A26D /* LandmarkRow.swift */,
-				C00D340A2C71ABE200E93448 /* LandmarkList.swift */,
-				C00D340C2C71B1A800E93448 /* LandmarkDetail.swift */,
 				B15EBA412C6DDF3100FEEF96 /* ContentView.swift */,
-				B15EBA502C6DEB5100FEEF96 /* MapView.swift */,
+				C00D340A2C71ABE200E93448 /* LandmarkList.swift */,
+				C035DB602C6FA08700E3A26D /* LandmarkRow.swift */,
+				C00D340C2C71B1A800E93448 /* LandmarkDetail.swift */,
 				B15EBA4E2C6DE8E900FEEF96 /* CircleImage.swift */,
+				B15EBA502C6DEB5100FEEF96 /* MapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
