@@ -22,23 +22,13 @@ struct LandmarkDetail: View {
             VStack(alignment: .leading) {
                 Text(landmark.name)
                     .font(.title)
-                if #available(iOS 15.0, *) {
-                    HStack {
-                        Text(landmark.park)
-                        Spacer()
-                        Text(landmark.state)
-                    }
-                    .font(.subheadline)
-                    .foregroundStyle(.secondary)
-                } else {
-                    HStack {
-                        Text(landmark.park)
-                        Spacer()
-                        Text(landmark.state)
-                    }
-                    .font(.subheadline)
-                    .foregroundColor(.gray)
+                HStack {
+                    Text(landmark.park)
+                    Spacer()
+                    Text(landmark.state)
                 }
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
                 
                 Divider()
                 

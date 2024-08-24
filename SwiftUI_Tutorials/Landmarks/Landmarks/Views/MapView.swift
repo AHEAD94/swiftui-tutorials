@@ -12,12 +12,8 @@ struct MapView: View {
     var coordinate: CLLocationCoordinate2D
     
     var body: some View {
-        if #available(iOS 17.0, *) {
-            Map(position: .constant(.region(region)))
-            // constant: 임의로 지도 위치를 바꾸어도 MapView는 detect 할 필요 없음
-        } else {
-            Text("Only available in iOS 17.0 or newer")
-        }
+        Map(position: .constant(.region(region)))
+        // constant: 임의로 지도 위치를 바꾸어도 MapView는 detect 할 필요 없음
     }
     
     private var region: MKCoordinateRegion {

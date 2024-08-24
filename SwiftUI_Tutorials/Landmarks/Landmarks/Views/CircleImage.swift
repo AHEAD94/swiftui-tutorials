@@ -11,18 +11,12 @@ struct CircleImage: View {
     var image: Image
     
     var body: some View {
-        if #available(iOS 15.0, *) {
-            image
-                .clipShape(Circle())
-                .overlay {
-                    Circle().stroke(.white, lineWidth: 4)
-                }
-                .shadow(radius: 7)
-        } else {
-            image
-                .clipShape(Circle())
-                .shadow(radius: 7)
-        }
+        image
+            .clipShape(Circle())
+            .overlay {
+                Circle().stroke(.white, lineWidth: 4)
+            }
+            .shadow(radius: 7)
     }
 }
 

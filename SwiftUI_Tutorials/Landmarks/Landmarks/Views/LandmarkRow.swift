@@ -20,13 +20,8 @@ struct LandmarkRow: View {
             Spacer()
             
             if landmark.isFavorite {
-                if #available(iOS 15.0, *) {
-                    Image(systemName: "star.fill")
-                        .foregroundStyle(.yellow)
-                } else {
-                    Image(systemName: "star.fill")
-                        .foregroundColor(.yellow)
-                }
+                Image(systemName: "star.fill")
+                    .foregroundStyle(.yellow)
             }
         }
     }
