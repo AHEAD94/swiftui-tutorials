@@ -20,6 +20,7 @@
 		C035DB592C6F998000E3A26D /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = C035DB582C6F998000E3A26D /* Landmark.swift */; };
 		C035DB5B2C6F9BE700E3A26D /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C035DB5A2C6F9BE700E3A26D /* ModelData.swift */; };
 		C035DB612C6FA08700E3A26D /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C035DB602C6FA08700E3A26D /* LandmarkRow.swift */; };
+		C0C01B0E2C7F447F003403BD /* CategoryHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C01B0D2C7F447F003403BD /* CategoryHome.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		C035DB582C6F998000E3A26D /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		C035DB5A2C6F9BE700E3A26D /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		C035DB602C6FA08700E3A26D /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LandmarkRow.swift; path = Landmarks/Views/Landmarks/LandmarkRow.swift; sourceTree = SOURCE_ROOT; };
+		C0C01B0D2C7F447F003403BD /* CategoryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHome.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				B15EBA412C6DDF3100FEEF96 /* ContentView.swift */,
+				C0C01B0D2C7F447F003403BD /* CategoryHome.swift */,
 				C00CB8FE2C7987F60038DA4F /* Landmarks */,
 				C00CB8FF2C7988160038DA4F /* Helper */,
 			);
@@ -211,6 +214,7 @@
 				B15EBA512C6DEB5100FEEF96 /* MapView.swift in Sources */,
 				C00D340D2C71B1A800E93448 /* LandmarkDetail.swift in Sources */,
 				C00CB8FD2C7986730038DA4F /* FavoriteButton.swift in Sources */,
+				C0C01B0E2C7F447F003403BD /* CategoryHome.swift in Sources */,
 				B15EBA402C6DDF3100FEEF96 /* LandmarksApp.swift in Sources */,
 				C00D340B2C71ABE200E93448 /* LandmarkList.swift in Sources */,
 				C035DB592C6F998000E3A26D /* Landmark.swift in Sources */,
